@@ -44,7 +44,7 @@ Here are some glimpses of SyncMyCalls in action:
   <tr>
     <td><img src="images/light_1.jpg" alt="light_img1" width="200"/></td>
     <td><img src="images/light_2.jpg" alt="light_img2" width="200"/></td>
-    <td><img src="images/light_1.jpg" alt="light_img3" width="200"/></td>
+    <td><img src="images/light_3.jpg" alt="light_img3" width="200"/></td>
   </tr>
   <tr>
     <td><img src="images/light_4.jpg" alt="light_img4" width="200"/></td>
