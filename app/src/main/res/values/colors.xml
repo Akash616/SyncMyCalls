@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_light">#211f24</color>
+    <color name="text_primary">#000000</color>
+    <color name="app_bar_color">#fdf7fe</color>
+    <color name="status_bar_color">#fdf7fe</color>
+    <color name="tab_selected_color">#F2E9FD</color>
+    <color name="incoming_call_color">#4994EC</color>
+    <color name="outgoing_call_color">#A77BF7</color>
+    <color name="missed_call_color">#EC5F59</color>
+    <color name="rv_bg_color">@color/app_bar_color</color>
+
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="purple">#800080</color>
+    <color name="gray">#D3D3D3</color> <!-- optional fallback -->
+    <color name="view_color">@color/white</color>
+    <color name="chip_background">#E6E6FA</color>
+    <color name="btn_color">@color/black</color>
+    <color name="light_gray">#E8ECEF</color>
+
+    <color name="chip_group_bg">@color/black</color>
+    <color name="chip_selected_background">#C8A2C8</color>
+
+    <color name="stroke_unselected">@android:color/transparent</color>
+    <color name="stroke_selected">@color/black</color>
+    <color name="chip_background_unselected">#E6E6FA</color>
+    <color name="chip_background_selected">#E6E6FA</color>
+
+</resources>

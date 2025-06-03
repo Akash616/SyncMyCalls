@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_primary">#FFFFFF</color> <!-- white -->
+    <color name="app_bar_color">@color/black_light</color>
+    <color name="status_bar_color">@color/black_light</color>
+    <color name="tab_selected_color">#5F6368</color>
+    <color name="view_color">#FF000000</color>
+    <color name="chip_background">@color/tab_selected_color</color>
+    <color name="btn_color">@color/text_primary</color>
+    <color name="chip_group_bg">@color/chip_background</color>
+
+    <color name="stroke_unselected">@android:color/transparent</color>
+    <color name="stroke_selected">#A77BF7</color>
+    <color name="chip_background_unselected">#E6E6FA</color>
+    <color name="chip_background_selected">#E6E6FA</color>
+</resources>

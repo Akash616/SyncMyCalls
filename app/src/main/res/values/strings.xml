@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SyncMyCalls</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logs">Logs</string>
+    <string name="analytics">Analytics</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="tv_analytics_policy">All call log data is analyzed locally on your device and never transmitted to online servers, ensuring your privacy and keeping your information safe and confidential.</string>
+    <string name="analytics_policy">Analytics Policy</string>
+    <string name="tv_storage_policy">This app temporarily stores generated files, deleting them on exit. You can download call logs to your chosen location. Logger only accesses call logs, ensuring your privacy.</string>
+    <string name="storage_policy">Storage Policy</string>
+    <string name="app_information">Application Information</string>
+    <string name="version">version</string>
+    <string name="_1_0_0">1.0.0</string>
+    <string name="platform">platform</string>
+    <string name="android">Android</string>
+    <string name="app_script_integration">App Script Integration</string>
+    <string name="app_script_description">Note: COMING SOON!\n\nThis app uses Google Apps Script to store and manage your data efficiently. It connects to Google Sheets to save information, such as user inputs, and allows you to export your data as an Excel file to Google Drive for easy access and sharing.</string>
+</resources>

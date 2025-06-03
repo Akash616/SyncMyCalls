@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_13sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_information"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/dmsans_medium"
+            android:layout_marginBottom="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rv_item_rounded"
+            android:layout_marginBottom="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_8sdp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:text="@string/version"
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1_0_0"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/platform"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/android"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_script_integration"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/dmsans_medium"
+            android:layout_marginBottom="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_script_description"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_12sdp"
+            android:fontFamily="@font/dmsans_medium"
+            android:background="@drawable/rv_item_rounded"
+            android:layout_marginBottom="@dimen/_14sdp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

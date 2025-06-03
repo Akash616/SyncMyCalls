@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date_range_options">
+        <item>All Time</item>
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>This Month</item>
+        <item>Past Month</item>
+        <item>This Year</item>
+        <item>Past Year</item>
+        <item>Custom</item>
+    </string-array>
+</resources>

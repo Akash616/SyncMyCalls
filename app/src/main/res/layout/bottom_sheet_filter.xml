@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_13sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <View
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/btn_color"/>
+
+        </LinearLayout>
+
+        <!-- Specific Phone Number Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:background="@drawable/chip_item_rounded"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:text="Specific Phone Number"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switch_specific_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:thumbTint="@color/btn_color"
+                    app:trackDecorationTint="@android:color/transparent"
+                    app:trackTint="@color/chip_background" />
+
+            </LinearLayout>
+
+            <!-- Mobile Number EditText (Hidden by default) -->
+            <EditText
+                android:id="@+id/edit_text_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Call Type Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/dmsans_medium"
+            android:text="Call Type"
+            android:textSize="@dimen/_12ssp" />
+
+        <!-- Call Type Chips -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_call_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chip_item_rounded"
+            android:paddingHorizontal="@dimen/_13sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            app:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_missed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Missed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_rejected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Rejected"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_incoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Incoming"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_outgoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="OutGoing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_answered_externally"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Answered Externally"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_blocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Blocked"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wifi_incoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Wifi Incoming"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wifi_outgoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Wifi Outgoing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_voice_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Voice Mail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:checked="true"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Unknown"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="@dimen/_6sdp"
+                app:chipStrokeColor="@color/chip_stroke_color_selector"
+                app:chipStrokeWidth="@dimen/_1sdp" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Date Range Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/chip_item_rounded"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_13sdp"
+            android:paddingVertical="@dimen/_12sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:text="Date Range"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_background">
+
+                    <Spinner
+                        android:id="@+id/spinner_date_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/date_range_options"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:paddingVertical="@dimen/_6sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Custom Date Range (Hidden by default) -->
+            <LinearLayout
+                android:id="@+id/layout_custom_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- Start Date -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:src="@drawable/ic_calender"
+                        app:tint="@color/btn_color" />
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsans_medium"
+                        android:text="Start Date"
+                        android:textSize="@dimen/_11ssp" />
+                </LinearLayout>
+
+                <!-- End Date -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:src="@drawable/ic_calender"
+                        app:tint="@color/btn_color" />
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsans_medium"
+                        android:text="End Date"
+                        android:textSize="@dimen/_11ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_13sdp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsans_medium"
+                android:paddingVertical="@dimen/_11sdp"
+                android:text="Reset to Default"
+                android:textColor="@color/btn_color"
+                android:textSize="@dimen/_11ssp"
+                app:backgroundTint="@color/tab_selected_color"
+                app:cornerRadius="@dimen/_8sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dmsans_medium"
+                android:paddingVertical="@dimen/_11sdp"
+                android:text="Apply Filters"
+                android:textColor="@color/btn_color"
+                android:textSize="@dimen/_11ssp"
+                app:backgroundTint="@color/chip_background"
+                app:cornerRadius="@dimen/_8sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
