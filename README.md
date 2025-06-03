@@ -49,7 +49,7 @@ Here are some glimpses of SyncMyCalls in action:
   <tr>
     <td><img src="images/light_4.jpg" alt="light_img4" width="200"/></td>
     <td><img src="images/light_5.jpg" alt="light_img5" width="200"/></td>
-    <td></td>
+    <td><img src="images/light_6.jpg" alt="light_img6" width="200"/></td>
   </tr>
 </table>
 
